@@ -18,8 +18,3 @@
   - Upload the updated file to your server.
   - The cache will be bypassed automatically due to the version query parameter in the script URL.
     """
-
-# Guardar el contenido en un archivo usage-guide.md
-
-with open("/mnt/data/usage-guide.md", "w") as file:
-file.write(usage_guide_content)
