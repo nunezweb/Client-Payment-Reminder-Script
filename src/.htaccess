@@ -1,6 +1,9 @@
 # Author: Alejandro Núñez
+
 # Email: alejandro@nunezweb.com
+
 # Description: .htaccess configuration for handling CORS and cache control
+
 # Date: 2024-06-18
 
 <IfModule mod_rewrite.c>
