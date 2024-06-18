@@ -1,4 +1,5 @@
-# Client-Opacity-Reminder
+# Client Payment Reminder Script ;)
+## Description
 A JavaScript script that gradually decreases the opacity of a client's website if payment is overdue or not pay. Customize the due date and deadline. Includes .htaccess settings for CORS and caching. Ideal for providing a gentle reminder to clients for pending payments.
 
 ## License
@@ -11,12 +12,6 @@ You are free to share and adapt the material as long as you provide appropriate 
 
 - **Alejandro Núñez**
 - **Email**: alejandro@nunezweb.com
-
-# Client Payment Reminder Script
-
-## Description
-
-Do you have a client who hasn't paid? Use this script to gradually decrease the opacity of their website, ultimately fading it away if payment is not received. Set a due date and customize the number of days you offer them until the website is fully vanished.
 
 ## How It Works
 
