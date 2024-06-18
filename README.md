@@ -45,7 +45,7 @@ days_deadline: 60
 
 The `.htaccess` file included in this repository should contain the following configuration:
 
-\`\`\`apache
+```apache
 <IfModule mod_rewrite.c>
     RewriteEngine On
     # Allow requests from example.com, mysite.com, and testsite.com
@@ -66,15 +66,15 @@ The `.htaccess` file included in this repository should contain the following co
     Header set Pragma "no-cache"
     Header set Expires "0"
 </FilesMatch>
-\`\`\`
+```
 
 ### Step 3: Include the Script in Your Website
 
 Include the script in the footer of your website. If you are using WordPress, you can add the following line to the `footer.php` file of your active theme, just before the closing `</body>` tag:
 
-\`\`\`php
+```php
 <script src="https://yourdomain.com/path/to/development-mode.js?v=<?php echo time(); ?>"></script>
-\`\`\`
+```
 
 ### How to Use
 
