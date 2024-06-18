@@ -23,6 +23,16 @@ Do you have a client who hasn't paid? Use this script to gradually decrease the 
 
 This script modifies the opacity of the `body` tag on a client's website, decreasing it each day after a specified due date until it reaches a minimum opacity. You can set a custom due date and a number of days after which the website will fully fade away.
 
+```javascript
+/* change these variables as you wish */
+developmentMode: true,
+message: "Website in development, click here to go to production.",
+link: "https://www.yoursite.com",
+due_date: "2017-02-27",
+days_deadline: 60
+/* stop changing here */
+```
+
 ## Installation
 
 ### Step 1: Upload the Files
