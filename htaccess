@@ -1,0 +1,25 @@
+# Author: Alejandro Núñez
+# Email: alejandro@nunezweb.com
+# Description: .htaccess configuration for handling CORS and cache control
+# Date: 2024-06-18
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Allow requests from example.com, mysite.com, and testsite.com
+    RewriteCond %{HTTP:Origin} ^(https?://(example\.com|mysite\.com|testsite\.com))$
+    RewriteRule .* - [E=ORIGIN:%{HTTP:Origin}]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Allow CORS requests from specified origins
+    Header set Access-Control-Allow-Origin %{ORIGIN}e env=ORIGIN
+    Header set Access-Control-Allow-Credentials "true"
+    Header set Access-Control-Allow-Methods "GET, POST, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, Authorization"
+</IfModule>
+
+<FilesMatch "development-mode.js">
+Header set Cache-Control "no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "0"
+</FilesMatch>
