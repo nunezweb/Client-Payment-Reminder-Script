@@ -28,7 +28,7 @@ This script modifies the opacity of the `body` tag on a client's website, decrea
 developmentMode: true,
 message: "Website in development, click here to go to production.",
 link: "https://www.yoursite.com",
-due_date: "2017-02-27",
+due_date: "2024-01-20",
 days_deadline: 60
 /* stop changing here */
 ```
