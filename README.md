@@ -8,11 +8,6 @@ This work is licensed under the [Creative Commons Attribution 4.0 International 
 
 You are free to share and adapt the material as long as you provide appropriate credit, a link to the license, and indicate if changes were made.
 
-### Author
-
-- **Alejandro Núñez**
-- **Email**: alejandro@nunezweb.com
-
 ## How It Works
 
 This script modifies the opacity of the `body` tag on a client's website, decreasing it each day after a specified due date until it reaches a minimum opacity. You can set a custom due date and a number of days after which the website will fully fade away.
